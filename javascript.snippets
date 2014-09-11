@@ -18,3 +18,21 @@ snippet rjsm
 
 		return ${3};
 	});
+snippet rjsb
+	define([
+		'jquery',
+		'underscore',
+		'backbone'
+	], function(
+		$,
+		_,
+		Backbone
+	) {
+		"use strict";
+
+		var ${1} = Backbone.${2}.extend({
+
+		});
+
+		return ${3};
+	});
