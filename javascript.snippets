@@ -36,3 +36,35 @@ snippet rjsb
 
 		return ${3};
 	});
+snippet formview
+	define([
+		'jquery',
+		'underscore',
+		'backbone',
+		'marionette',
+		'marionette.formview'
+	], function(
+		$,
+		_,
+		Backbone,
+		Marionette,
+		FormView		
+	) {
+		"use strict";
+
+		var ${1} = Backbone.Marionette.FormView.extend({
+
+		});
+
+		return ${2};
+	});
+snippet init
+	initialize: function() {
+		${1}
+	}${2}
+snippet render
+	onRender: function() {
+		${1}
+	}${2}
+snippet temp
+	template: template${1}
