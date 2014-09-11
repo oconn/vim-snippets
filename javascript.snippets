@@ -1,0 +1,20 @@
+snippet rjsm
+	define([
+		'jquery',
+		'underscore',
+		'backbone',
+		'marionette'
+	], function(
+		$,
+		_,
+		Backbone,
+		Marionette
+	) {
+		"use strict";
+
+		var ${1} = Backbone.Marionette.${2}.extend({
+
+		});
+
+		return ${3};
+	});
